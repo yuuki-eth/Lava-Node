@@ -11,16 +11,26 @@ U can buy it from
 🌟Run a full node🌟
 
 Install Dependencies
+
 sudo apt -q update
+
 sudo apt -qy install curl git jq lz4 build-essential fail2ban ufw
+
 sudo apt -qy upgrade
+
 Configure Moniker
+
 MONIKER="<your-moniker-name>"
+
 Install Go
 sudo rm -rf /usr/local/go
+
 curl -Ls https://go.dev/dl/go1.20.10.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
+
 eval $(echo 'export PATH=$PATH:/usr/local/go/bin' | sudo tee /etc/profile.d/golang.sh)
+
 eval $(echo 'export PATH=$PATH:$HOME/go/bin' | tee -a $HOME/.profile)
+
 📌Before proceeding, ensure u visit the Lava GitHub repository to verify the latest version. Look on the right-hand side of the page to determine the most recent release. Once u’ve identified the latest version, update the command “git checkout” accordingly to reflect this newest version.
 
 Build Binaries

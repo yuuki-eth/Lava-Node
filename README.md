@@ -9,6 +9,7 @@ U can buy it from
  Buy the Suitable VPS and then open ur VPS in MOBILE SSH App(if u use Iphone/Android), use Putty(PC)
 
 🌟Run a full node🌟
+
 Install Dependencies
 sudo apt -q update
 sudo apt -qy install curl git jq lz4 build-essential fail2ban ufw
